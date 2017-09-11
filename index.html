@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>my-vue</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
+<script>
+  load();
+  window.onresize=function(){
+    load();
+  };
+  function load(){
+    var rootEle=document.documentElement;
+    var w=rootEle.clientWidth;
+    rootEle.style.fontSize=w/3.75+"px";
+    console.log(rootEle.style.fontSize);
+  }
+</script>
